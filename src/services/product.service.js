@@ -3,11 +3,14 @@ import { ProductModel } from "../models/product.model.js";
 import {
   collection,
   getDoc,
+  getDocs,
   doc,
   deleteDoc,
   updateDoc,
   addDoc,
 } from "firebase/firestore";
+
+const collectionName = "productos"
 
 export const getAllProducts = async () => {
   const productsCol = await collection(db, collectionName);
