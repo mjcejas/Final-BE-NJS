@@ -14,7 +14,7 @@ export const getProducts = async (req, res) => {
 export const getProductById = async (req, res) => {
   try {
     const { id } = req.params;
-    const product = await productService.getProductFromDBById(id);
+    const product = await productService.getProductById(id);
 
     if (product.length === 0) {
       return res
