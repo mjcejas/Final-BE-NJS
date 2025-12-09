@@ -1,0 +1,23 @@
+{
+  "name": "techlab",
+  "version": "1.0.0",
+  "description": "Proyecto de curso Node JS",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "author": "MC",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "firebase": "^12.6.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
